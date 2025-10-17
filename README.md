@@ -56,11 +56,19 @@ function fib_dynamic(n):
 ## Empirical Data & Discussion 
 When I actually ran my Fibonacci code, I got some really interesting results that matched what I expected from my Big-O analysis. Seeing the timing differences in real life made it click for me even more.
 
+![Fibonacci Algorithms](images/Fibonacci_Algorithms.png)
+
 So here’s what I noticed:
+
+![#1. Iterative](images/Iterative_Approach.png)
 
 - The iterative version ran super fast, basically instant for small inputs. Even when I went up to something like n = 40 or n = 50, it still finished quickly because it only loops once through all the numbers.
 
+![#2. Recursively](images/Recursive_Approach.png)
+
 - The recursive version got slow really fast! For small values like n = 10 or n = 15, it was fine, but by n = 35 it already took several seconds. That matches my Big-O analysis because recursion doubles the work each time.
+
+![#3. Dynamic Programming](images/Dynamic_Programming_Approach.png)
 
 - The dynamic programming approach ran almost as fast as the iterative one. It filled the array efficiently, and the only small difference was the space used to store values. Time-wise, it behaved just like O(n), exactly like my prediction.
 
@@ -74,13 +82,6 @@ Even though my results matched my assumptions, I learned that timings can be aff
 
 - The smaller the n, I noticed the less noticeable the differences are between the methods. For bigger n, the gap gets a lot bigger (especially for recursion).
 
-![Fibonacci Algorithms](images/Fibonacci_Algorithms.png)
-
-![#1. Iterative](images/Iterative_Approach.png)
-
-![#2. Recursively](images/Recursive_Approach.png)
-
-![#3. Dynamic Programming](images/Dynamic_Programming_Approach.png)
 
 ## Language Analysis
 I decided to use Java as my second language because I wanted to see how a higher-level, object-oriented language compares to C when solving the same problem. After writing the Fibonacci program in C, I felt like I understood how things worked at a very low level working with memory manually, thinking about arrays, and making sure I freed space correctly. But I also wanted to experience what it feels like to write the same algorithm in a language that helps you a little more.
