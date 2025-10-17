@@ -108,7 +108,7 @@ int main(void) {
         printf("\n");
     }
 
-    // The timing vars to calculate speed and ops for each
+    // The timing variables to calculate speed and ops for each
     clock_t start_clock, end_clock;
     double elapsed_time_seconds;
     unsigned long long operation_count;
@@ -151,3 +151,4 @@ int main(void) {
 
     return 0;
 }
+
